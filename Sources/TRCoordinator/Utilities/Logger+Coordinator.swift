@@ -9,7 +9,7 @@ import Foundation
 import OSLog
 
 extension Logger {
-    private static let subsystem = "SwiftUICoordinator"
+    private static let subsystem = "TRCoordinator"
 
     /// Logs related to deep links.
     static let deepLink = Logger(subsystem: subsystem, category: "DeepLink")

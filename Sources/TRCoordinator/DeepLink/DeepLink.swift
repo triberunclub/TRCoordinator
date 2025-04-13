@@ -1,6 +1,6 @@
 //
 //  DeepLink.swift
-//  SwiftUICoordinatorExample
+//  TRCoordinatorExample
 //
 //  Created by Erik Drobne on 11/09/2023.
 //

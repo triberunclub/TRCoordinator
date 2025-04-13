@@ -1,12 +1,12 @@
-# SwiftUICoordinator
+# TRCoordinator
 
-![Build Status](https://github.com/erikdrobne/SwiftUICoordinator/actions/workflows/workflow.yml/badge.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/erikdrobne/SwiftUICoordinator/blob/main/LICENSE.md)
+![Build Status](https://github.com/erikdrobne/TRCoordinator/actions/workflows/workflow.yml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/erikdrobne/TRCoordinator/blob/main/LICENSE.md)
 ![Static Badge](https://img.shields.io/badge/iOS%20Compatibility-15.0-blue)
 
 ## Introduction
 
-SwiftUICoordinator is a powerful implementation of the Coordinator pattern specifically designed for SwiftUI applications. It provides a robust solution for managing navigation flows while maintaining clean architecture principles and separation of concerns.
+TRCoordinator is a powerful implementation of the Coordinator pattern specifically designed for SwiftUI applications. It provides a robust solution for managing navigation flows while maintaining clean architecture principles and separation of concerns.
 
 ## Features
 
@@ -26,13 +26,13 @@ SwiftUICoordinator is a powerful implementation of the Coordinator pattern speci
 
 ```Swift
 dependencies: [
-    .package(url: "https://github.com/erikdrobne/SwiftUICoordinator")
+    .package(url: "https://github.com/erikdrobne/TRCoordinator")
 ]
 ```
 
 ## 🏃 Core Components
 
-<img width="912" alt="workflow" src="https://github.com/erikdrobne/SwiftUICoordinator/assets/15943419/9c9d279c-e87d-43c2-85df-7f197bed01d3">
+<img width="912" alt="workflow" src="https://github.com/erikdrobne/TRCoordinator/assets/15943419/9c9d279c-e87d-43c2-85df-7f197bed01d3">
 
 ### Coordinator Protocol
 
@@ -139,7 +139,7 @@ protocol RouterViewFactory {
 ## 🔧 Usage
 
 ```Swift
-import SwiftUICoordinator
+import TRCoordinator
 ```
 
 ### Create Route
@@ -224,7 +224,7 @@ extension AuthCoordinator: RouterViewFactory {
 
 ### Custom transitions
 
-SwiftUICoordinator also supports creating custom transitions.
+TRCoordinator also supports creating custom transitions.
 
 ```Swift
 final class FadeTransition: NSObject, Transitionable {
@@ -333,7 +333,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 
 ## Example project
 
-For better understanding, I recommend that you check the example project located in the `SwiftUICoordinatorExample` directory.
+For better understanding, I recommend that you check the example project located in the `TRCoordinatorExample` directory.
 
 ## 🤝 Contributions
 
@@ -361,6 +361,6 @@ To submit a pull request:
 3. Make your changes and test thoroughly.
 4. Open a pull request, clearly describing the changes you've made.
 
-Thank you for contributing to SwiftUICoordinator! 🚀
+Thank you for contributing to TRCoordinator! 🚀
 
 **If you appreciate this project, kindly give it a ⭐️ to help others discover the repository.**
