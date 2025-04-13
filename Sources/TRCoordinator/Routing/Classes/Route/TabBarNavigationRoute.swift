@@ -9,5 +9,5 @@ import UIKit
 
 @MainActor
 public protocol TabBarNavigationRoute: NavigationRoute, Hashable {
-    var tabBarItem: UITabBarItem { get }
+	var tabBarItem: UITabBarItem { get }
 }

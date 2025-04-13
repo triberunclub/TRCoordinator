@@ -16,24 +16,29 @@ import UIKit
 ///   `NavigationControllerTransitionHandler` instance.
 @MainActor
 public final class NavigationControllerTransitionDelegate: NSObject, UINavigationControllerDelegate {
+	// MARK: Stored Properties
 
-    let transitionHandler: NavigationControllerTransitionHandler
+	let transitionHandler: NavigationControllerTransitionHandler
 
-    init(transitionHandler: NavigationControllerTransitionHandler) {
-        self.transitionHandler = transitionHandler
-    }
+	// MARK: Init
 
-    public func navigationController(
-        _ navigationController: UINavigationController,
-        animationControllerFor operation: UINavigationController.Operation,
-        from fromVC: UIViewController,
-        to toVC: UIViewController
-    ) -> UIViewControllerAnimatedTransitioning? {
-        return transitionHandler.navigationController(
-            navigationController,
-            animationControllerFor: operation,
-            from: fromVC,
-            to: toVC
-        )
-    }
+	init(transitionHandler: NavigationControllerTransitionHandler) {
+		self.transitionHandler = transitionHandler
+	}
+
+	// MARK: Delegate
+
+	public func navigationController(
+		_ navigationController: UINavigationController,
+		animationControllerFor operation: UINavigationController.Operation,
+		from fromVC: UIViewController,
+		to toVC: UIViewController
+	) -> UIViewControllerAnimatedTransitioning? {
+		return transitionHandler.navigationController(
+			navigationController,
+			animationControllerFor: operation,
+			from: fromVC,
+			to: toVC
+		)
+	}
 }

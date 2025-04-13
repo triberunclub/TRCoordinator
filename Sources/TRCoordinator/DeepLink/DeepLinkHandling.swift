@@ -56,7 +56,7 @@ public extension DeepLinkHandling {
     /// - Returns: A `[String: String]` where the keys are the names of the query items and the values are their
     /// corresponding values.
     func params(for url: URL, and keys: Set<String>) throws(DeepLinkParamsError) -> [String: String] {
-        guard keys.count > 0 else {
+		guard keys.isEmpty else {
             return [:]
         }
 
@@ -67,7 +67,7 @@ public extension DeepLinkHandling {
         return queryItems
             .filter { keys.contains($0.name) }
             .reduce(into: [String: String]()) { result, queryItem in
-                result[queryItem.name] = queryItem.value
+				result[queryItem.name] = queryItem.value?.urlDecoded
             }
     }
 }

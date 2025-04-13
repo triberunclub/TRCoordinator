@@ -8,10 +8,14 @@
 import Foundation
 
 public enum DeepLinkError: Error {
-    case invalidScheme
-    case unknownURL
+	/// Invalid scheme.
+	case invalidScheme
+
+	// Unknown URL.
+	case unknownURL
 }
 
 public enum DeepLinkParamsError: Error {
-    case missingQueryString
+	// Missing query params.
+	case missingQueryString
 }

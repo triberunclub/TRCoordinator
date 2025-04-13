@@ -1,18 +1,18 @@
 //
-//  DeepLink.swift
-//  TRCoordinatorExample
+//  UniversalLink.swift
+//  FoodMate
 //
-//  Created by Erik Drobne on 11/09/2023.
+//  Created by Francesco Leoni on 15/02/24.
 //
 
 import Foundation
 
 /// A struct representing a deep link within an app's navigation system.
-public struct DeepLink {
-	// MARK: Stored Properties
+public struct UniversalLink {
+	// MARK: - Stored Properties
 
 	/// The action associated with the deep link.
-	public let action: String
+	public let path: String
 
 	/// The route or destination associated with the deep link.
 	public let route: NavigationRoute
@@ -20,27 +20,26 @@ public struct DeepLink {
 	/// A set of parameters associated with the deep link.
 	public let params: Set<String>
 
-	// MARK: Init
+	// MARK: - Init
 
 	public init(
-		action: String,
+		path: String,
 		route: NavigationRoute,
 		params: Set<String> = []
 	) {
-		self.action = action
+		self.path = path
 		self.route = route
 		self.params = params
 	}
 }
 
-// MARK: - Extensions
+extension UniversalLink: Hashable {
 
-extension DeepLink: Hashable {
-	public static func == (lhs: DeepLink, rhs: DeepLink) -> Bool {
-		lhs.action == rhs.action
+	public static func == (lhs: UniversalLink, rhs: UniversalLink) -> Bool {
+		lhs.path == rhs.path
 	}
 
 	public func hash(into hasher: inout Hasher) {
-		hasher.combine(action)
+		hasher.combine(path)
 	}
 }

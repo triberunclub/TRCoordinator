@@ -9,6 +9,6 @@ import Foundation
 
 @MainActor
 public protocol CoordinatorDeepLinkHandling {
-    /// Takes deep link and its parameters and handles it.
-    func handle(_ deepLink: DeepLink, with params: [String: String])
+	/// Takes deep link and its parameters and handles it.
+	func handle(_ deepLink: DeepLink, with params: [String: String])
 }
