@@ -88,7 +88,7 @@
 		17C379732ACEE1EA00CA4105 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
 		17DF24AE2AFD14C600578CD9 /* SlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		17E1C1FF2A1BD86D00542AB9 /* TRCoordinator.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TRCoordinator.xctestplan; sourceTree = "<group>"; };
-		182274C529C09C79001F9B50 /* SwiftUICoordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUICoordinator; path = ../..; sourceTree = "<group>"; };
+		182274C529C09C79001F9B50 /* TRCoordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TRCoordinator; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,7 +337,7 @@
 		182274C429C09C79001F9B50 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				182274C529C09C79001F9B50 /* SwiftUICoordinator */,
+				182274C529C09C79001F9B50 /* TRCoordinator */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -361,7 +361,7 @@
 			packageProductDependencies = (
 				5A0652AD2DABC55A009F1149 /* TRCoordinator */,
 			);
-			productName = SwiftUICoordinatorExample;
+			productName = TRCoordinatorExample;
 			productReference = 1732C9F829A6607500C2BC1F /* TRCoordinatorExample.app */;
 			productType = "com.apple.product-type.application";
 		};

@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftUICoordinatorTests"
-               BuildableName = "SwiftUICoordinatorTests"
-               BlueprintName = "SwiftUICoordinatorTests"
+               BlueprintIdentifier = "TRCoordinatorTests"
+               BuildableName = "TRCoordinatorTests"
+               BlueprintName = "TRCoordinatorTests"
                ReferencedContainer = "container:../..">
             </BuildableReference>
          </TestableReference>
